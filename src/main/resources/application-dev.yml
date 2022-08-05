@@ -1,0 +1,17 @@
+server:
+  port: 8080
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  datasource:
+    druid:
+      driver-class-name: com.p6spy.engine.spy.P6SpyDriver
+      url: jdbc:mysql://127.0.0.1:3306/ljm?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&&useSSL=false
+      username: root
+      password: 123456
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+
